@@ -51,17 +51,32 @@ main .HolidayGift .GoGifter {
 }
 
 main .FirstImages {
-  margin-top: 2%;
+  margin-top: 3%;
+
   background-color: #ffffff;
+}
+main .FirstImages .title {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-weight: 600;
+}
+main .FirstImages .Images {
+  padding-top: 3%;
+  padding-bottom: 3%;
+
+  display: flex;
+  justify-content: space-evenly;
 }
 main .FirstImages .Images img {
   height: 400px;
   width: 300px;
   object-fit: cover;
-  margin-left: 35px;
-  margin-right: auto;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.3);
 }
-
 main .SecondImage {
   margin-top: 2%;
   text-align: center;
