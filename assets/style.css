@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+body {
+  line-height: 1.65;
+  background-color: #e9edee;
+  font-family: "Open Sans", sans-serif;
+}
+header {
+  background-color: #222f3f;
+  padding: 10px;
+  text-align: left;
+}
+header img {
+  height: 50px;
+  width: auto;
+}
+.toolbar {
+  background-color: #364759;
+  color: #eaeded;
+  font-size: 1.5rem;
+
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.toolbar span {
+  padding-left: 40px;
+}
+
+main {
+  margin: 2%;
+}
+main .ShopButton {
+  color: #eaeded;
+  background-color: #f56600;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+main .HolidayGift {
+  background-image: url(../assets/bg-image.png);
+  color: #eaeded;
+  padding: 2%;
+  text-align: center;
+}
+main .HolidayGift .Holiday {
+  padding: 2%;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+main .HolidayGift .GoGifter {
+  font-weight: 700;
+}
+
+main .FirstImages {
+  margin-top: 2%;
+  background-color: #ffffff;
+}
+main .FirstImages .Images img {
+  height: 400px;
+  width: 300px;
+  object-fit: cover;
+  margin-left: 35px;
+  margin-right: auto;
+}
+
+main .SecondImage {
+  margin-top: 2%;
+  text-align: center;
+  font-weight: 550;
+}
+main .ThirdImage {
+  margin-top: 2%;
+  text-align: center;
+  font-weight: 550;
+}
+main .SecondImage p img {
+  width: 100%;
+}
+main .ThirdImage p img {
+  width: 100%;
+}
+.Back {
+  background-color: #364759;
+  text-align: center;
+  padding: 10px;
+}
+.Back a {
+  color: #eaeded;
+}
+footer {
+  text-align: center;
+  padding: 50px;
+  background-color: #222f3f;
+}
+footer img {
+  height: 50px;
+}
+main .SecondImage .title a {
+  color: #386b78;
+  text-decoration: none;
+}
+main .ThirdImage .title a {
+  color: #386b78;
+  text-decoration: none;
+}
