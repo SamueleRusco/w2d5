@@ -54,33 +54,51 @@ const cars = [
 ];
 
 for (let i = 0; i < cars.length; i++) {
-  cars[i].licenseplate = "";
+  cars[i].licensePlate = "aa" + 00 + i + "bb";
 }
 console.log(cars);
 /* ESERCIZIO 6
     Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
+cars.push({
+  brand: "citroen",
+  model: "ds3",
+  color: "white",
+  trims: ["so chick", "performace"],
+  licensePlate: "aa03bb",
+});
 
 /* ESERCIZIO 7
     Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
 */
+
 const justTrims = [];
 
 /* ESERCIZIO 8
-    Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console. Se la prima lettera della proprietà
+    Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console.
+    Se la prima lettera della proprietà
     "color" ha valore "b", mostra in console "Fizz". Altrimenti, mostra in console "Buzz".
 */
 
 /* ESERCIZIO 9
-    Utilizza un ciclo while per stampare in console i valori del seguente array numerico fino al raggiungimento del numero 32.
+    Utilizza un ciclo while per stampare in console i valori del seguente array numerico
+     fino al raggiungimento del numero 32.
 */
 const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ];
-
+let i = 0;
+while (i < numericArray.length) {
+  i++;
+  console.log(numericArray[i]);
+  if (numericArray[i] == 32) {
+    break;
+  }
+}
 /* ESERCIZIO 10
-    Partendo dall'array fornito e utilizzando un costrutto switch, genera un nuovo array composto dalle posizioni di ogni carattere all'interno
+    Partendo dall'array fornito e utilizzando un costrutto switch,
+     genera un nuovo array composto dalle posizioni di ogni carattere all'interno
     dell'alfabeto italiano.
     es. [f, b, e] --> [6, 2, 5]
 */
