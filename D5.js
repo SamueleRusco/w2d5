@@ -56,9 +56,10 @@ const cars = [
 for (let i = 0; i < cars.length; i++) {
   cars[i].licensePlate = "aa" + 00 + i + "bb";
 }
-console.log(cars);
+//console.log(cars);
 /* ESERCIZIO 6
-    Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", rispettando la struttura degli altri elementi.
+    Scrivi del codice per aggiungere un nuovo oggetto in ultima posizione nell'array "cars", 
+    rispettando la struttura degli altri elementi.
     Successivamente, rimuovi l'ultimo elemento della proprietà "trims" da ogni auto.
 */
 cars.push({
@@ -69,12 +70,22 @@ cars.push({
   licensePlate: "aa03bb",
 });
 
+for (let i = 0; i < cars.length; i++) {
+  cars[i].trims.pop();
+  console.log(cars[i].trims);
+}
+
 /* ESERCIZIO 7
-    Scrivi del codice per salvare il primo elemento della proprietà "trims" di ogni auto nel nuovo array "justTrims", sotto definito.
+    Scrivi del codice per salvare il primo elemento della proprietà "trims"
+     di ogni auto nel nuovo array "justTrims", sotto definito.
 */
 
 const justTrims = [];
-
+for (let i = 0; i < cars.length; i++) {
+  let es7 = cars[i].trims[0];
+  justTrims.push(es7);
+}
+console.log(justTrims);
 /* ESERCIZIO 8
     Cicla l'array "cars" e costruisci un if/else statament per mostrare due diversi messaggi in console.
     Se la prima lettera della proprietà
@@ -89,7 +100,7 @@ const numericArray = [
   6, 90, 45, 75, 84, 98, 35, 74, 31, 2, 8, 23, 100, 32, 66, 313, 321, 105,
 ];
 let i = 0;
-while (i < numericArray.length) {
+/*while (i < numericArray.length) {
   i++;
   console.log(numericArray[i]);
   if (numericArray[i] == 32) {
